@@ -1,0 +1,45 @@
+{
+  "_note": "Example of the sections file the pane reads. This is the format Stage 3 will generate from your argument-architect scaffold and your draft-in-voice output. You can also hand-edit one like this and load it with the pane's 'Load sections' button. Every field except 'heading' is optional.",
+  "title": "How can AI be governed safely in children's social care?",
+  "sections": [
+    {
+      "heading": "The value of AI in social care is not what it does or how quickly it does it, but the space it creates for the compassion, principles and time a social worker needs to act.",
+      "paragraphType": "establishing",
+      "lead": "AI's worth in this setting is measured by what it frees up for practice, not by raw efficiency.",
+      "whyItMatters": "This sets the yardstick the rest of the argument uses to judge any AI tool.",
+      "bullets": [
+        { "text": "The value of AI is not in what it does or how quickly it does it. It is the space created for the compassion, principles and time that a social worker is provided with to act and intervene.", "cite": "(Desouza2020, p.211)" },
+        { "text": "Why would that financial decision have an ethical consequence? It introduces the idea of the public good within an economic context.", "cite": "(Desouza2020, p.206)" }
+      ],
+      "placeholder": "[Write this section in your own words.]",
+      "draft": "The value of AI in social care, I would argue, is not what it does or how quickly it does it, but the space it creates for the compassion, principles and time a social worker needs to act (Desouza2020, p.211). Seen in this way, its worth is measured by what it frees up for practice rather than by raw efficiency.",
+      "comments": [
+        { "text": "This rests on two of your own comments about value. Do you have a source on what an efficiency-first AI actually displaces in practice?" }
+      ]
+    },
+    {
+      "heading": "Past ICT modernisation in social care destroyed value because it was poorly planned and evaluated internally, so AI needs external evaluation and auditing built in as due diligence.",
+      "paragraphType": "tension",
+      "lead": "The lesson of the earlier ICT reform is that internal evaluation let value erode unchecked.",
+      "whyItMatters": "It shows why an AI governance model cannot rely on self-assessment.",
+      "bullets": [
+        { "text": "Value destruction. The previous Labour government's effort to modernise ICT was costly, poorly planned and executed, and a big issue was that it was being evaluated internally.", "cite": "(Desouza2020, p.208)" },
+        { "text": "A system to audit and to preemptively test for biases must be in place as part of the LA's due diligence.", "cite": "(Desouza2020, p.211)" }
+      ],
+      "placeholder": "[Write this section in your own words.]",
+      "comments": [
+        { "text": "This sentence makes two claims at once, that past ICT destroyed value and that AI now needs external evaluation. Is that one point or two?" }
+      ]
+    },
+    {
+      "heading": "A workable AI governance model needs to assign roles and concessions that share risk across the network and remove the blame placed on Local Authorities.",
+      "paragraphType": "synthesis",
+      "lead": "Sharing risk across the actors is what stops the blame culture reproducing itself.",
+      "whyItMatters": "This is the move the whole section builds toward, the shape of the solution.",
+      "bullets": [
+        { "text": "What are the concessions that remove blame and remove failure for Local Authorities? A conceptual framework that can assign roles and map the interests so that risk is shared across the network.", "cite": "(Desouza2020, p.208)" }
+      ],
+      "placeholder": "[Write this section in your own words.]"
+    }
+  ]
+}

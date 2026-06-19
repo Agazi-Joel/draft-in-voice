@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Draft in Voice</title>
+<script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+<style>
+  :root{
+    --paper:#f5f4f1; --panel:#ffffff; --ink:#23262b; --muted:#6b6f76; --faint:#9a9ea4;
+    --line:#e6e3dc; --line-soft:#efece6; --accent:#2c5578; --accent-ink:#214260; --accent-soft:#e9eef4;
+    --sans:"Segoe UI",system-ui,-apple-system,Arial,sans-serif; --serif:"Cambria","Georgia",serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;max-width:360px;font-family:var(--sans);font-size:14px;line-height:1.5;color:var(--ink);background:var(--paper);overflow-x:hidden}
+  .cardhead,.preview,.doctitle,.ctext,.hint{overflow-wrap:break-word;word-break:break-word}
+  .crow .ctext{min-width:0}
+  header{padding:12px 14px 8px;background:var(--panel);border-bottom:1px solid var(--line)}
+  header h1{font-family:var(--serif);font-size:16px;font-weight:600;margin:0}
+  .status{font-size:11.5px;color:var(--muted);margin-top:3px;line-height:1.4}
+  .bar{display:flex;gap:8px;align-items:center;padding:10px 14px 4px}
+  .hint{font-size:12px;color:var(--muted);margin:6px 14px 10px;line-height:1.45}
+  #list{padding:0 12px 18px}
+  .doctitle{font-family:var(--serif);font-size:13.5px;font-weight:600;color:var(--accent-ink);margin:6px 2px 12px;line-height:1.4}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:9px;padding:11px 12px;margin-bottom:11px}
+  .cardhead{font-size:13px;font-weight:600;line-height:1.45;display:block}
+  .tag{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.04em;font-weight:700;color:#fff;background:var(--accent);border-radius:999px;padding:2px 7px;margin-right:6px;vertical-align:middle}
+  .preview{font-size:12.5px;color:var(--muted);margin-top:7px;line-height:1.45;border-left:2px solid var(--line);padding-left:9px}
+  .btns{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+  .btn{font:inherit;font-size:12.5px;min-height:32px;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:5px 11px;border-radius:7px;cursor:pointer}
+  .btn:hover{border-color:var(--accent);color:var(--accent-ink)}
+  .btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .btn.primary:hover{background:var(--accent-ink)}
+  .btn.sm{min-height:28px;font-size:11.5px;padding:3px 9px}
+  .crow{display:flex;gap:8px;align-items:flex-start;justify-content:space-between;margin-top:9px;padding-top:9px;border-top:1px dashed var(--line-soft)}
+  .ctext{font-size:12px;color:#7a5b1f;line-height:1.45}
+  .filebtn{font-size:12.5px;min-height:32px;display:inline-flex;align-items:center;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:5px 11px;border-radius:7px;cursor:pointer}
+  .filebtn:hover{border-color:var(--accent);color:var(--accent-ink)}
+  .empty{color:var(--muted);font-style:italic;padding:10px 2px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Draft in Voice</h1>
+  <div class="status" id="status">Loading...</div>
+</header>
+<div class="bar">
+  <label class="filebtn">Load sections<input type="file" id="file" accept=".json" hidden></label>
+  <button class="btn sm" id="sampleBtn">Sample</button>
+</div>
+<p class="hint">Put your cursor in Word where you want the text, then Insert. The skeleton and draft are starting blocks. You rewrite in your own words.</p>
+<div id="list"></div>
+<script src="taskpane.js"></script>
+</body>
+</html>
